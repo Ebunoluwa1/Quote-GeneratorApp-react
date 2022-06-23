@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto+Condensed:wght@300;400&display=swap');
+
 .card{
     background-color: white;
     position: absolute;
           top: 50%;
           left: 50%;
-          margin-right: -50%;
+          margin-right: -35%;
           transform: translate(-50%, -50%);
     padding-bottom: 2em;
     padding-top: 2em;
@@ -49,3 +50,16 @@
 .card__info > .card__genre{
     color:lightgrey;
 }
+
+
+
+@media(max-width: 980px) {
+    .card__body{
+       align-items: center;
+      width: 40vw;
+      margin-left: -20px;
+      padding: 1em;
+      margin-top: 6em;
+      font-size: small;
+    }
+  }  

@@ -1,6 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto+Condensed:wght@100;200;300;400&display=swap');
+
 .app{
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  position: relative;
   background-color: white; 
+  min-height: 100vh;
+}
+
+.random{
+  color: black;
+  padding: 1rem;
+  padding-right: 4rem;
+  position: absolute;
+  display: flex;
+  top: 5px;
+  right: 0;
+}
+
+
+.app{
+  overflow: scroll;
+}
+
+/* Hide Scrollbar for chrome, safari and Opera */
+.app::-webkit-scrollbar{
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge,and firefox */
+.app{
+  -ms-overflow-style: none;   /*IE and Edge*/
+  scrollbar-width: none;  /*firefox*/
+}
+
+@media(max-width: 600px) {
+  .app{
+    margin-top: 6em;
+    font-size: small;
+    word-wrap: break-word;
+  }
 }
